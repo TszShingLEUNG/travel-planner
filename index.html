@@ -443,9 +443,9 @@
         let spotModalBS = null;
 
         document.addEventListener('DOMContentLoaded', function() {
-            // 1. Sortable
-            const itineraryList = document.getElementById('itineraryList');
-            new
+            // Init Modal
+            spotModalBS = new bootstrap.Modal(document.getElementById('spotModal'));
+
             // 2. Init Logic
             bindButtonEvents();
             initExpenseTracker();
